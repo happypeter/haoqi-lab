@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.main{
+  background-color: #B2EBF2;
+  width: 100%;
+}
+.page-head{
+  max-width: 720px;
+  padding: 90px 40px;
+  margin: 0 auto;
+}
+.page-head h1{
+  padding-bottom: 10px;
+  font-size: 28px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #212121;
+}
+.page-head p{
+  font-weight: normal;
+  line-height: 140%;
+  color: #757575
+}
+.subnav{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.subnav ul{
+  width: 100%;
+  list-style: none;
+}
+.subnav ul li{
+  width: 50%;
+  float: left;
+  text-align: center;
+  background-color: #00bcd4;
+}
+.subnav ul li :hover{
+  background-color: #0097a7;
+}
+.subnav ul .active{
+  background-color: #0097a7;
+}
+.subnav ul li a{
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 16px 0 18px 0;
+  text-decoration: none;
+  color: #fff;
+}
+.column{
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.column .article{
+  padding: 40px 7%;
+}
+.column .article h1 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  font-weight: normal;
+}
+.column form{
+  padding: 40px 7%;
+  margin: 0 auto;
+}
+.colemn .article p{
+  line-height: 170%;
+  margin: 0 0 20px 0;
+}
