@@ -46,9 +46,11 @@
 
 .main-box h3 {
   padding-top: 40px;
+  color: #212121;
 }
 
 .main-box p {
   padding-top: 10px;
+  line-height: 1.8;
   color: #757575;
 }

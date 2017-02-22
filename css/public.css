@@ -38,10 +38,10 @@
   padding: 40px 0 0 26px;
 }
 
-.header-bgc .header-title {
+.header-bgc h1 {
   color: #fff;
-  font-size: 40px;
   margin-top:40px;
+  margin-bottom: 10px;
 }
 
 .header-bgc .header-int {
