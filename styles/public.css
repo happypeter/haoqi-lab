@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.wrap{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.app-header{
+  background-color: #00bcd4;
+  height: 80px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-header h1{
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.app-footer{
+  height: 40px;
+  background-color: #00bcd4;
+  flex-shrink: 0;
+  display: flex;
+}
+.app-footer a{
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer :first-child{
+  border-left: 0;
+}
+
+/*header*/
+
+.header{
+  display: none;
+}
+
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00bcd4;
+}
+
+.header-logo img {
+  width: 90px;
+  height: 130px;
+  margin: 40px 0 20px 40px;
+}
+.header .header-content{
+  margin-left: 20px;
+}
+.header h1 {
+  color: #fff;
+  margin-top:40px;
+  margin-bottom: 10px;
+}
+
+  .header .header-int {
+  line-height: 1.8;
+  color: #fff;
+}
+
+.header-nav-wrap {
+  background-color: #0097A7;
+  height: 56px;
+  display: none;
+}
+
+.header-nav-wrap a {
+  display: block;
+  flex-basis: calc(20% - 40px)
+}
+
+.header-nav-wrap ul {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  list-style: none;
+}
+
+.header-nav-wrap li {
+  flex-basis: calc(20% - 40px);
+  text-align: center;
+}
+
+.header-nav-wrap li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+}
+
+.header-nav-wrap .header-nav-inner a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+/*footer*/
+.footer {
+  background-color:#0097A7;
+  display: none;
+}
+
+.footer-inner{
+  display: flex;
+  justify-content:center;
+  height:102px;
+}
+
+.footer p {
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  line-height: 102px;
+  margin-right: 40px;
+  font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  .app-header{
+    display: none;
+  }
+  .header{
+    display: block;
+  }
+  .header-nav-wrap{
+    display: block;;
+  }
+  .app-footer{
+    display: none;
+  }
+  .footer{
+    display: block;
+  }
+}
